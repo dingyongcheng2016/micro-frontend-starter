@@ -27,9 +27,7 @@ import './router/index' // permission control
 
 import formCreate from '@form-create/element-ui'
 
-
 Vue.use(VueCompositionAPI)
-
 
 Vue.use(checkPer)
 Vue.use(permission)

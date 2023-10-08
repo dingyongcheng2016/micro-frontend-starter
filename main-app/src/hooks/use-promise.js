@@ -15,11 +15,11 @@ export default function usePromise(fn) {
   const state = reactive({
     loading: false,
     error: null,
-    result: null,
+    result: null
   })
 
   let lastPromise
-  const use = async (...args) => {
+  const use = async(...args) => {
     state.error = null
     state.loading = true
     const promise = (lastPromise = fn(...args))
@@ -37,6 +37,6 @@ export default function usePromise(fn) {
 
   return {
     ...toRefs(state),
-    use,
+    use
   }
 }

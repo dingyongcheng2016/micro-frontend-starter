@@ -26,6 +26,6 @@ export default function useOnScroll(el) {
   return {
     scrollX,
     scrollY,
-    remove,
+    remove
   }
 }
