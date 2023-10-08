@@ -1,5 +1,7 @@
 import Cookies from 'js-cookie'
 import Config from '@/settings'
+import store from '@/store'
+import router from '@/router'
 
 const TokenKey = Config.TokenKey
 
@@ -15,4 +17,10 @@ export function setToken(token, rememberMe) {
 
 export function removeToken() {
   return Cookies.remove(TokenKey)
+}
+
+
+export async function logout(redirect) {
+  await store.dispatch('user/logout')
+  router.push(`/login${redirect ? `?redirect=${redirect}` : ''}`)
 }

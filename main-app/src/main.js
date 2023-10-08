@@ -21,9 +21,12 @@ import './assets/styles/index.scss'
 import App from './App'
 import store from './store'
 import router from './router/routers'
+import './qiankun.js'
 
 import './assets/icons' // icon
 import './router/index' // permission control
+
+import microAppMixin from '@/mixin/micro-app'
 
 import formCreate from '@form-create/element-ui'
 
@@ -44,5 +47,6 @@ new Vue({
   el: '#app',
   router,
   store,
+  mixins: [microAppMixin],
   render: h => h(App)
 })
