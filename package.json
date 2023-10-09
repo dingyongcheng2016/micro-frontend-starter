@@ -4,7 +4,22 @@
   "description": "micro-app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "all:install": "npm-run-all --serial install:*",
+    "all:start": "npm-run-all --parallel start:*",
+    "install:main": "cd main-app && yarn install",
+    "install:vue": "cd sub-vue && yarn install",
+    "install:vue3": "cd sub-vue3 && yarn install",
+    "install:react": "cd sub-react && yarn install",
+    "install:html": "cd sub-html && yarn install",
+    "start:main": "cd main-app && yarn start",
+    "start:vue": "cd sub-vue && yarn start",
+    "start:vue3": "cd sub-vue3 && yarn start",
+    "start:react": "cd sub-react && yarn start",
+    "start:html": "cd sub-html && yarn start",
+    "build:main": "cd main-app && yarn build",
+    "build:vue": "cd sub-vue && yarn build",
+    "build:vue3": "cd sub-vue3 && yarn build",
+    "build:react": "cd sub-react && yarn build"
   },
   "repository": {
     "type": "git",
