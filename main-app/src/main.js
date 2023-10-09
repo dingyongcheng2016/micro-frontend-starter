@@ -21,12 +21,15 @@ import './assets/styles/index.scss'
 import App from './App'
 import store from './store'
 import router from './router/routers'
+
+// 乾坤子应用注册
 import './qiankun.js'
 
 import './assets/icons' // icon
 import './router/index' // permission control
 
-import microAppMixin from '@/mixin/micro-app'
+// 微前端mixin
+import microAppMixin from '@/mixins/micro-app'
 
 import formCreate from '@form-create/element-ui'
 
