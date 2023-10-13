@@ -7,6 +7,6 @@ app.use(cors());
 app.use('/', express.static('static'));
 
 // 监听端口
-app.listen(10400, () => {
-  console.log("server is listening in http://localhost:10400")
+app.listen(3004, () => {
+  console.log("server is listening in http://localhost:3004")
 })

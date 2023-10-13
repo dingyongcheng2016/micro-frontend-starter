@@ -4,6 +4,8 @@ import Layout from '../layout/index'
 
 Vue.use(Router)
 
+import microAppRoutes from './modules/micro-app'
+
 export const constantRouterMap = [
   { path: '/login',
     meta: { title: '登录', noCache: true },
@@ -71,7 +73,8 @@ export const constantRouterMap = [
         meta: { title: '表单生成器' }
       }
     ]
-  }
+  },
+  ...microAppRoutes
 ]
 
 export default new Router({

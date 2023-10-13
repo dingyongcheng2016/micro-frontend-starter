@@ -30,7 +30,7 @@ registerMicroApps([
   },
   {
     name: 'vue3 app',
-    entry: isProd ? `//${location.host}/vue3-app/` : '//localhost:3004',
+    entry: isProd ? `//${location.host}/vue3-app/` : '//localhost:3003',
     container: '#app-vue3',
     loader,
     activeRule: '/app-vue3/index',
@@ -40,7 +40,7 @@ registerMicroApps([
   },
   {
     name: 'purehtml app',
-    entry: isProd ? `//${location.host}/html-app/` : '//localhost:3003',
+    entry: isProd ? `//${location.host}/html-app/` : '//localhost:3004',
     container: '#app-purehtml',
     loader,
     activeRule: '/app-purehtml/index'

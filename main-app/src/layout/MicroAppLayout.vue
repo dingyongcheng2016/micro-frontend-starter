@@ -23,6 +23,7 @@ export default {
     })
   },
   mounted() {
+    console.log('启动。。。')
     if (!window.qiankunStarted) {
       window.qiankunStarted = true
       start({

@@ -8,7 +8,7 @@ const microAppRoutes = [
     component: Layout,
     children: [
       {
-        path: 'index*',
+        path: 'index',
         name: 'AppReact',
         component: Vue.extend({ ...MicroAppLayout, name: 'AppReact' }),
         props: { id: 'app-react' },
@@ -21,7 +21,7 @@ const microAppRoutes = [
     component: Layout,
     children: [
       {
-        path: 'index*',
+        path: 'index',
         name: 'AppVue',
         component: Vue.extend({ ...MicroAppLayout, name: 'AppVue' }),
         props: { id: 'app-vue' },
